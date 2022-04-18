@@ -1,0 +1,25 @@
+
+
+// Backtrack
+
+// 46. Permutations
+//https://blog.csdn.net/qq_41996454/article/details/108396441?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_title~default-8.pc_relevant_aa&spm=1001.2101.3001.4242.5&utm_relevant_index=11
+
+def backtrack(res, path):
+    if 满足结束条件:
+        操作res
+        return
+        
+    for 选择 in 选择列表:
+        if 选择不合法
+            # 剪枝
+            continue
+
+        // 做选择 进入下一层决策树
+        选择列表.remove(选择)
+        路径.add(选择)
+        backtrack(选择列表，路径)
+
+        // 撤销选择
+        路径.remove(选择)
+    

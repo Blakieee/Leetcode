@@ -1,0 +1,13 @@
+Queue<Type> q = new LinkedList<>();
+
+// add to head
+add   
+
+// remove head
+poll 
+
+// see head without removing it
+peek
+
+// offer return T/F, add return true or exception
+offer 

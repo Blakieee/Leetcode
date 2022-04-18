@@ -1,0 +1,12 @@
+Stack<Type> s = new Stack();
+
+// push
+push
+
+// pop
+pop
+
+// see top without removing it
+peek
+
+
