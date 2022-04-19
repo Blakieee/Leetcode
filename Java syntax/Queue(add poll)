@@ -6,6 +6,9 @@ add
 // remove head
 poll 
 
+// remove tail
+removeLast
+
 // see head without removing it
 peek
 
