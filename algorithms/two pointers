@@ -1,0 +1,23 @@
+// fast-slow pointer
+// 82 delete duplicates in list: two pointer + dummy
+// IMPORTANT: use dummy to implement algorithm on 1st node.
+// slow = last list before duplicate
+// fast = cur node
+
+
+// when has next node, and next is equal to current
+while (fast.next!=null && fast.next.val==fast.val) {
+    fast=fast.next;
+}
+
+// if slow.next is not cur fast, means there is a dup
+// IMPORTANT: then we point next of slow to fast.next(which is next node of duplicate)
+ if (slow.next != fast) {
+    slow.next = fast.next;
+} else {
+    // if slow.next is fast, there is no duplicate, move slow and fast.
+    slow = slow.next;
+}
+
+// we move fast under all circumstances
+fast = fast.next;

@@ -11,6 +11,8 @@ def binary_search(array) -> int:
     left, right = 0, len(array)-1
     while left < right:
         mid = left + (right - left) // 2
+        // 插入终止条件 153
+        // if (mid==...) return
         if condition(mid):
             right = mid
         else:
